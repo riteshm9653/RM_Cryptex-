@@ -9,7 +9,7 @@ const Cryptoinfo = () => {
         <div className="cryptex-content">
           <div className="cryptex-image-container">
             <img
-              src="/public/images/about-banner.png"
+              src="/images/about-banner.png"
               alt="Cryptex Dashboard"
               className="cryptex-image"
             />
@@ -62,7 +62,7 @@ const Cryptoinfo = () => {
             <button className="get-started-btn">Get started now</button>
           </div>
           <img
-            src="/src/assets/images/hero-banner.png"
+            src="/images/hero-banner.png"
             alt="Crypto Trading"
             className="crypto-image"
           />

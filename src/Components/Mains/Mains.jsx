@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 
 const Mains = () => {
   const steps = [
-    { id: 1, title: "Download", img: "/public/images/instruction-1.png" },
+    { id: 1, title: "Download", img: "/images/instruction-1.png" },
     {
       id: 2,
       title: "Connect Wallet",
-      img: "/public/images/instruction-2.png",
+      img: "/images/instruction-2.png",
     },
     {
       id: 3,
       title: "Start Trading",
-      img: "/public/images/instruction-3.png",
+      img: "/images/instruction-3.png",
     },
-    { id: 4, title: "Earn Money", img: "/public/images/instruction-4.png" },
+    { id: 4, title: "Earn Money", img: "/images/instruction-4.png" },
   ];
   return (
     <div>
@@ -32,7 +32,7 @@ const Mains = () => {
             </a>
           </div>
           <img
-            src="/public/images/hero-banner.png"
+            src="/images/hero-banner.png"
             alt="Crypto Trading"
             className="crypto-image"
           />
@@ -67,7 +67,7 @@ const Mains = () => {
         <div className="crypto-investment-content">
           <div className="crypto-image-container">
             <img
-              src="/public/images/app-banner.png"
+              src="/images/app-banner.png"
               alt="Crypto App"
               className="crypto-app-image"
             />
@@ -103,12 +103,12 @@ const Mains = () => {
 
             <div className="store-buttons">
               <img
-                src="/public/images/googleplay.png"
+                src="/images/googleplay.png"
                 alt="Google Play"
                 className="store-icon"
               />
               <img
-                src="/public/images/appstore.png"
+                src="/images/appstore.png"
                 alt="App Store"
                 className="store-icon"
               />
