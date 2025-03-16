@@ -8,7 +8,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const { setCurrency } = useContext(CoinContext);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -40,7 +40,7 @@ const Navbar = () => {
       </Link>
       <div className="menu">
         <div className="menu-icon" onClick={toggleMenu}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? <FaBars /> : <FaTimes />}
         </div>
       </div>
 
