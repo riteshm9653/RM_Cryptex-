@@ -1,0 +1,167 @@
+/* Cryptex.css */
+.cryptex-container {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.cryptex-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 72rem;
+  align-items: center;
+}
+
+.cryptex-image-container {
+  width: 100%;
+}
+
+.cryptex-image {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.cryptex-info {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.cryptex-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.cryptex-description {
+  color: #9ca3af; /* gray-400 */
+  margin-top: 1rem;
+}
+
+.cryptex-features {
+  margin-top: 1.5rem;
+}
+
+.cryptex-feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.cryptex-feature:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.feature-icon {
+  color: #3b82f6; /* blue-500 */
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.feature-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.feature-description {
+  color: #9ca3af; /* gray-400 */
+}
+
+.cryptex-button {
+  margin-top: 1.5rem;
+  background-color: #2563eb; /* blue-600 */
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cryptex-button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  .cryptex-content {
+    flex-direction: row;
+  }
+
+  .cryptex-image-container {
+    width: 50%;
+  }
+
+  .cryptex-info {
+    width: 50%;
+    margin-left: 3rem;
+    margin-top: 0;
+  }
+}
+
+/* heor section */
+.crypto-exchange-container {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.crypto-exchange-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  gap: 60px;
+}
+
+.crypto-text {
+  max-width: 500px;
+}
+
+.crypto-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.crypto-text p {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  margin-bottom: 20px;
+}
+
+.get-started-btn {
+  background-color: #008cff;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.get-started-btn:hover {
+  background-color: #0071e3;
+}
+
+.crypto-image {
+  width: 50%;
+  max-width: 600px;
+}
+
+@media (max-width: 900px) {
+  .crypto-exchange-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .crypto-image {
+    width: 100%;
+  }
+}

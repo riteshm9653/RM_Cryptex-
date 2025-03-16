@@ -1,0 +1,92 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: #ddd;
+  border-bottom: 2px solid white;
+}
+.navbar .logo {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: var(--fw-700);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.navbar ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar ul li:hover {
+  color: blue;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+.nav-right .select {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 20px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.navbar option {
+  background-color: #1a1a1a;
+  color: white;
+}
+.navbar button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 20px 8%;
+  }
+  .navbar button {
+    gap: 8px;
+    padding: 8px 18px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .navbar ul {
+    display: none;
+  }
+  .navbar {
+    padding: 20px 5%;
+  }
+  .nav-right button img {
+    width: 12px;
+  }
+}

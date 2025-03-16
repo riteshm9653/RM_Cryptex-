@@ -1,0 +1,142 @@
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(farthest-side, #0000 40%, #474bff 41%);
+  background: linear-gradient(
+        0deg,
+        rgba(71, 75, 255, 0.5) 50%,
+        rgba(71, 75, 255, 1) 0
+      )
+      center/4.5px 100%,
+    linear-gradient(
+        90deg,
+        rgba(71, 75, 255, 0.25) 50%,
+        rgba(71, 75, 255, 0.75) 0
+      )
+      center/100% 4.5px;
+  background-repeat: no-repeat;
+  animation: spinner-d3o0rx 1s infinite steps(12);
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+
+.spinner::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+
+@keyframes spinner-d3o0rx {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.hero-container {
+  width: 100%;
+  gap: 2rem;
+  background-color: black;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.hero-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+  .hero-image {
+    width: 100%;
+  }
+}
+
+.hero-text {
+  color: white;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #a0aec0;
+}
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+.full-screen-container {
+  width: 100vw; /* w-screen */
+  height: 100vh; /* h-screen */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  justify-content: center; /* justify-center */
+  align-items: center; /* items-center */
+}
+.coin-name img {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.coin-name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coin-info {
+  margin: 1.5rem;
+  border-bottom: 2px solid #444;
+}
+
+.coin-info ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #444;
+  color: white;
+}
+
+.hero-image img {
+  max-width: 350px;
+  display: inline-block;
+  border-radius: 8px;
+}
