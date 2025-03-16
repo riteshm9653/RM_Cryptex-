@@ -27,7 +27,7 @@ const Navbar = () => {
       <Link to="/">
         <div className="logo">
           <img
-            src="/src/assets/images/logo.svg"
+            src="/public/images/logo.svg"
             width="40"
             height="40"
             alt="Cryptex logo"

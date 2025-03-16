@@ -9,7 +9,7 @@ const Cryptoinfo = () => {
         <div className="cryptex-content">
           <div className="cryptex-image-container">
             <img
-              src="/src/assets/images/about-banner.png"
+              src="/public/images/about-banner.png"
               alt="Cryptex Dashboard"
               className="cryptex-image"
             />
